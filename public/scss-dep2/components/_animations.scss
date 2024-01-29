@@ -1,0 +1,78 @@
+
+[class*="ae--"] {
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  animation-timing-function: $ease-out-quint;
+}
+
+.ae--1.el-visible--partial {
+  animation-name: fadeInFromBottom;
+  animation-duration: 2s;
+}
+.ae--2.el-visible--partial {
+  animation-name: fadeInFromBottom;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+}
+.ae--3.el-visible--partial {
+  animation-name: fadeInFromBottom;
+  animation-duration: 2s;
+  animation-delay: 0ms;
+}
+.ae--4.el-visible--partial {
+  animation-name: fadeInFromBottom;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+}
+.ae--5.el-visible--partial {
+  animation-name: fadeInFromBottom;
+  animation-duration: 2s;
+  animation-delay: 1000ms;
+}
+.ae--6.el-visible--partial {
+  animation-name: fadeInFromBottom;
+  animation-duration: 1s;
+  animation-delay: 1000ms;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translate3d(0,50px,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes fadeOutToBottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translate3d(0,50px,0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

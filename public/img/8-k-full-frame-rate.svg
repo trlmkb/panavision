@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="157" viewBox="0 0 74 157">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#3D3D3D" font-family="OpenSans-Semibold, Open Sans" font-size="44" font-weight="500" transform="translate(-20 1)">
+            <tspan x="18.33" y="104">6</tspan> <tspan x="43.445" y="104">0</tspan> <tspan x="68.561" y="104" font-family="OpenSans-Light, Open Sans" font-size="16" font-weight="300">FPS</tspan>
+        </text>
+        <text fill="#3D3D3D" font-family="OpenSans-Light, Open Sans" font-size="16" font-weight="300" transform="translate(-20 1)">
+            <tspan x="14.961" y="135.234">At 8K Full </tspan> <tspan x="25.504" y="155.234">Frame</tspan>
+        </text>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.64 1.93h54.72v44.46H8.64z"/>
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M63.5 35.8h-55"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M54.98 39.55v3.09M45.21 39.55v3.09M35.44 39.55v3.09M25.67 39.55v3.09M15.9 39.55v3.09"/>
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M63.5 12.51h-55"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M54.98 5.68v3.09M45.21 5.68v3.09M35.44 5.68v3.09M25.67 5.68v3.09M15.9 5.68v3.09"/>
+        <path fill="#3D3D3D" fill-rule="nonzero" d="M31.7 18.43a4.23 4.23 0 0 1 2.58.73 2.32 2.32 0 0 1 1 2 2.57 2.57 0 0 1-.47 1.52 4 4 0 0 1-1.53 1.19 5.42 5.42 0 0 1 1.8 1.4c.356.457.55 1.02.55 1.6a2.66 2.66 0 0 1-1.08 2.21 4.49 4.49 0 0 1-2.83.84 4.72 4.72 0 0 1-2.88-.78 2.59 2.59 0 0 1-1-2.21 2.92 2.92 0 0 1 .51-1.69 4.21 4.21 0 0 1 1.63-1.31 4.19 4.19 0 0 1-1.37-1.29 2.83 2.83 0 0 1-.42-1.5 2.31 2.31 0 0 1 1-1.94 4.22 4.22 0 0 1 2.51-.77zM30 26.77a1.24 1.24 0 0 0 .46 1 2.4 2.4 0 0 0 2.57 0 1.26 1.26 0 0 0 .44-1c0-.378-.155-.74-.43-1a5.55 5.55 0 0 0-1.4-1c-1.093.567-1.64 1.233-1.64 2zm1.73-6.61a1.47 1.47 0 0 0-1 .31 1 1 0 0 0-.37.83c-.003.299.1.59.29.82.3.316.66.567 1.06.74a3 3 0 0 0 1-.72 1.3 1.3 0 0 0 .3-.85 1 1 0 0 0-.38-.83 1.52 1.52 0 0 0-.95-.3h.05zM46.53 29.74h-2.69L40.92 25l-1 .72v4h-2.37V18.58h2.37v5.11l.93-1.31 3-3.79h2.65l-3.89 4.94z"/>
+    </g>
+</svg>

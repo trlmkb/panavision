@@ -1,0 +1,23 @@
+.section--color {
+  padding-bottom: 30px;
+  .section-title {
+    padding-top: 93px;
+    padding-bottom: 84px;
+  }
+  .colors-compare {
+    margin-bottom: 46px;
+  }
+  .expandable-content {
+    >.container {
+      padding-top: 104px;
+      padding-bottom: 84px;
+    }
+    margin-bottom: -30px;
+    color: white;
+
+    p:not(.lead) {
+      line-height: 1.75;
+    }
+
+  }
+}

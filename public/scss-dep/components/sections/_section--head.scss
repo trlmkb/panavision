@@ -1,0 +1,27 @@
+.section--head {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .section-content h2:nth-of-type(1) {
+    margin-bottom: 41px;
+  }
+  .section-content h2 ~ h2,
+  .section-content h2 ~ h4 {
+    color: #5b5b5b;
+  }
+  .section-content--first .container {
+    padding: 84px 0 62px;
+  }
+  .section-content--last {
+    .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    p {
+      @extend %container-inner;
+      @extend .lead;
+    }
+  }
+}

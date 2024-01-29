@@ -1,0 +1,43 @@
+.header-top {
+  .navbar,
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar {
+    @include media-breakpoint-down(sm) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .panel-pane &,
+  .field-item & {
+    display: none !important;
+  }
+}
+.header-bottom {
+  // position: sticky;
+  // top: 0;
+  z-index: 1000;
+  .navbar {
+    padding: 0.35rem 1rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &.header-bottom-stuck {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+.header-bottom-filler {
+  height: 84px;
+  display: none;
+  .header-bottom-stuck + & {
+    display: block;
+  }
+}

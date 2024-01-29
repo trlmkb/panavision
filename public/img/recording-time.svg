@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="141" viewBox="0 0 109 141">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#3D3D3D" font-family="OpenSans-Semibold, Open Sans" font-size="44" font-weight="500" transform="translate(-2 1)">
+            <tspan x="36.11" y="105">1</tspan> <tspan x="61.226" y="105" font-family="OpenSans-Light, Open Sans" font-size="16" font-weight="300">hr</tspan>
+        </text>
+        <text fill="#3D3D3D" font-family="OpenSans-Light, Open Sans" font-size="16" font-weight="300" transform="translate(-2 1)">
+            <tspan x="0" y="137">Recording Time</tspan>
+        </text>
+        <g stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M24.5 7.25h59v39.81h-59z"/>
+            <path d="M32.71 1.23h10.53v6.03H32.71zM64.76 1.23h10.53v6.03H64.76zM37.97 14.07v6.62M34.66 17.38h6.63M66.71 17.38h6.63M24.5 34.32h59"/>
+        </g>
+    </g>
+</svg>

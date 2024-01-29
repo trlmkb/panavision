@@ -1,0 +1,40 @@
+// Body
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  height: auto !important;
+}
+html.html--mobile,
+.html--mobile body {
+  overflow: auto !important;
+}
+
+.container-inner,
+%container-inner {
+  max-width: 772px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  #main div#content {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #main #content {
+      width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #main-wrapper #content {
+      width: 100% !important;
+      margin-left: 0 !important;
+  }
+}

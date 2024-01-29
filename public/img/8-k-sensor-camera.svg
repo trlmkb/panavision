@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="85" viewBox="0 0 175 85">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#FFF" font-family="OpenSans, Open Sans" font-size="16" transform="translate(1 1)">
+            <tspan x="99.597" y="42.017">8K Sensor </tspan>
+        </text>
+        <text fill="#FFF" font-family="OpenSans, Open Sans" font-size="16" transform="translate(1 1)">
+            <tspan x="107.725" y="61.217">Camera</tspan>
+        </text>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M42.481 66.815c-13.147 0-23.844-10.696-23.844-23.843 0-13.146 10.697-23.843 23.844-23.843 13.146 0 23.842 10.697 23.842 23.843 0 13.147-10.696 23.843-23.842 23.843z"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M56.84 42.972c0-7.93-6.43-14.358-14.358-14.358-7.931 0-14.36 6.428-14.36 14.358 0 7.93 6.429 14.358 14.36 14.358 7.929 0 14.358-6.428 14.358-14.358zM42.481 7.692V1.934M42.481 84.011v-5.759M67.429 18.026l4.07-4.072M13.463 71.99l4.072-4.07M77.762 42.972h5.759M1.443 42.972h5.758M67.429 67.92l4.07 4.07M13.463 13.954l4.072 4.072"/>
+    </g>
+</svg>

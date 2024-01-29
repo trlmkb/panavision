@@ -1,0 +1,470 @@
+$annotationCircleBg: rgb(4, 208, 208);
+
+// $annotationBg       : rgba(#141414,.9)
+$annotationCircleColor: whitesmoke;
+$annotationBg: desaturate(lighten($annotationCircleBg, 40%), 20%);
+$annotationColor: darken(rgb(4, 208, 208), 25%);
+$mobileBg: #f5f5f5;
+$mobileClose: #454545;
+$mobileCloseCross: #ffffff;
+
+.PanavisionFeatureBlock {
+  position: relative;
+  min-height: 400px;
+
+  @include media-breakpoint-down(sm) {
+    min-height: 250px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  canvas {
+    width: 100%;
+  }
+}
+
+.Panavision-features {
+  @media screen and (max-width: 767px) {
+    .Panavision-featureToggleLines,
+    .Panavision-featureText {
+      display: none;
+    }
+  }
+
+  .Panavision-feature {
+    position: absolute;
+
+    @for $i from 1 through 11 {
+      &:nth-of-type(#{$i + 1}) {
+        transition-delay: $i * 200ms;
+      }
+    }
+  }
+
+  .Panavision-featureToggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    color: rgba($annotationCircleBg, 0.9);
+    padding: 8px;
+    position: relative;
+    transition: all 300ms linear 0s;
+    transition-duration: 150ms;
+
+    &:before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px solid;
+      border-radius: 100%;
+      animation: doublePulse 1.5s ease infinite;
+      z-index: 0;
+    }
+
+    .Panavision-featureToggleLines {
+      position: absolute;
+      top: 50%;
+      right: 41px;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        background: rgba($annotationCircleBg, 0.9);
+        transition: all 250ms ease-in-out;
+      }
+
+      &:before {
+        right: 0;
+        top: 0;
+        margin-top: -1px;
+        height: 2px;
+        max-width: 0;
+        width: 150px;
+        transition-delay: 500ms;
+      }
+
+      &:after {
+        top: 100%;
+        right: 148px;
+        width: 2px;
+        max-height: 0;
+        height: 40px;
+        transition-delay: 250ms;
+        background: linear-gradient(to bottom, rgba($annotationCircleBg, 0.9), $annotationBg);
+      }
+    }
+
+    .Panavision-featureTogglePlus {
+      position: relative;
+      border-radius: 100px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      background: rgba($annotationCircleBg, 0.9);
+      color: $annotationCircleColor;
+      text-align: center;
+      transition: all 300ms linear 0s;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 13px;
+        background: $annotationCircleColor;
+        width: 8px;
+        height: 2px;
+        border-radius: 2px;
+        transition: all 300ms ease-in-out;
+      }
+
+      &:after {}
+
+      &:before {
+        transform: rotate(90deg);
+        transform-origin: center;
+      }
+    }
+  }
+
+  .Panavision-featureText {
+    position: absolute;
+    right: 100%;
+    margin-right: 100px;
+    top: 64px;
+    padding: 20px;
+    width: 320px;
+    background: linear-gradient(to bottom, $annotationBg, darken($annotationBg, 10%));
+    color: $annotationColor;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0) translateY(-20px);
+    transform-origin: top;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: $ease-in-out-quint;
+    transition-delay: 0ms;
+  }
+
+  .Panavision-featureTextInner {
+
+    img {
+      display: none;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h5 {
+      font-size: 16px;
+    }
+
+    h6 {
+      font-size: 14px;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+  }
+
+  .Panavision-feature--active {
+    z-index: 10;
+
+    .Panavision-featureToggle:before {
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+
+    .Panavision-featureTogglePlus:before {
+      transform: rotate(0deg);
+    }
+
+    .Panavision-featureToggleLines {
+      &:before {
+        max-width: 150px;
+        transition-delay: 0ms;
+      }
+
+      &:after {
+        max-height: 40px;
+        transition-delay: 250ms;
+      }
+    }
+
+    .Panavision-featureText {
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1) translateY(0);
+      transition-delay: 400ms;
+    }
+  }
+
+  /*------------------------------------// */
+  //  Custom annotations
+  //------------------------------------
+
+  .Panavision-feature--1 {
+    top: 3%;
+    left: 39%;
+
+    .Panavision-featureText {
+      right: 0%;
+      top: 64px;
+    }
+
+    .Panavision-featureToggleLines {
+      &:before {
+        right: 0;
+        top: 0;
+        width: 150px;
+      }
+
+      &:after {
+        top: 100%;
+        right: 148px;
+        height: 40px;
+      }
+    }
+
+    &.Panavision-feature--active {
+      .Panavision-featureToggleLines {
+        &:before {
+          max-width: 150px;
+        }
+
+        &:after {
+          max-height: 40px;
+        }
+      }
+    }
+  }
+
+  .Panavision-feature--2 {
+    top: 38%;
+    left: 19%;
+
+    .Panavision-featureText {
+      right: auto;
+      left: -30px;
+      top: auto;
+      bottom: 64px;
+      transform-origin: bottom;
+    }
+
+    .Panavision-featureToggleLines {
+      &:before {
+        right: auto;
+        top: 0;
+        width: 130px;
+        left: 0;
+      }
+
+      &:after {
+        top: auto;
+        bottom: 100%;
+        right: -130px;
+        height: 40px;
+        background: linear-gradient(to top, rgba($annotationCircleBg, 0.9), darken($annotationBg, 10%));
+      }
+    }
+
+    &.Panavision-feature--active {
+      .Panavision-featureToggleLines {
+        &:before {
+          max-width: 150px;
+        }
+
+        &:after {
+          max-height: 40px;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------------// */
+//  Mobile block
+//------------------------------------
+
+.Panavision-mobileBlock {
+  position: relative;
+  display: none;
+  padding: 100px 20px 50px;
+  background: $mobileBg;
+  overflow: hidden;
+  animation-name: mobileBlockSlideDown;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  animation-timing-function: $ease-out-quint;
+
+  .Panavision-features:not(.mode--mobile) ~ & {
+    display: none !important;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid rgba(white, 0);
+    border-bottom-width: 0;
+    border-top-color: white;
+    width: 0;
+    height: 0;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  .Panavision-feature {
+    animation-name: mobileBlockContent;
+    animation-duration: 1000ms;
+    animation-delay: 100ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-timing-function: $ease-out-quint;
+  }
+}
+
+.Panavision-mobileBlockClose {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  color: $mobileClose;
+  transition: all 300ms linear 0s;
+  transition-duration: 150ms;
+  animation-name: rotateIn;
+  animation-duration: 600ms;
+  animation-fill-mode: both;
+  animation-timing-function: $ease-out-quint;
+  animation-timing-function: ease-out;
+}
+
+.Panavision-mobileBlockCloseCross {
+  position: relative;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  background: $mobileClose;
+  color: $mobileCloseCross;
+  text-align: center;
+  transition: all 300ms linear 0s;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: $mobileCloseCross;
+    width: 14px;
+    height: 1px;
+    border-radius: 2px;
+    transform-origin: 0 0;
+    transition: all 300ms ease-in-out;
+  }
+
+  &:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+
+  &:before {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+}
+
+
+
+
+@keyframes doublePulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes fade-in-scale-up {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes rotateIn {
+  0% {
+    transform: translateY(-20px) rotate(-90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+
+@keyframes mobileBlockSlideDown {
+  0% {
+    max-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  100% {
+    max-height: 3000px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+@keyframes mobileBlockContent {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

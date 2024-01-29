@@ -1,0 +1,28 @@
+.blue-link,
+%blue-link {
+  color: #1e99d4;
+  font-size: 1.125rem;
+  line-height: 1.33333333;
+}
+.text-blue {
+  color: $blue;
+}
+.text-light-blue {
+  color: $light-blue;
+}
+.text-large {
+  font-size: 1.375rem;
+}
+.text-big {
+  font-size: 1.25rem;
+}
+
+
+@include media-breakpoint-down(sm) {
+  h2 {
+    font-size: 3.375rem;
+  }
+  h3 {
+    font-size: 2.125rem;
+  }
+}

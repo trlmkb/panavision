@@ -1,0 +1,117 @@
+.section--optics {
+  .section-content {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    .container {
+      @extend %container-inner;
+      & > h2.heading.dynamicElement--9 {
+        margin-bottom: 40px;
+      }
+    }
+    &:after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 254px;
+      background-image: linear-gradient(to bottom, #ffffff, #000);
+    }
+  }
+  h3 {
+    margin-bottom: 46px;
+  }
+  .blue-link {
+    display: block;
+  }
+  .optics-tabs {
+    margin-bottom: 20px;
+    @extend %container-inner;
+    max-width: 750px;
+
+    .nav {
+      margin-bottom: 20px;
+      max-width: 624px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include media-breakpoint-down(sm) {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+    .nav-link {
+      font-size: 0.875rem;
+      line-height: 1.14;
+      padding: 11px 0;
+      height: 210px;
+      text-align: center;
+      display: table-cell;
+      border-bottom: 3px solid #e9e9e9;
+      transition-property: all;
+      transition-duration: 300ms;
+      transition-timing-function: ease-out;
+      transition-timing-function: $ease-out-quint;
+      max-width: 112px;
+      width: 100%;
+      vertical-align: bottom;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      span {
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 120px !important;
+      }
+
+      &.active,
+      &:hover {
+        // box-shadow: 0 3px #1e99d4;
+      }
+    }
+    .nav-indicator {
+       background: #1e99d4;
+    }
+    .tab-content {
+      margin-bottom: 20px;
+    }
+    .tab-pane {
+      font-size: 1rem;
+      line-height: 1.25;
+
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .expandable-content {
+    color: white;
+    background: black;
+    margin-bottom: 50px;
+    > .container {
+      padding-top: 80px;
+      padding-bottom: 76px;
+    }
+
+    blockquote {
+      max-width: 623px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .specifications {
+      .specifications-item {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    }
+  }
+}

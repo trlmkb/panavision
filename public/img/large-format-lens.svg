@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="137" height="82" viewBox="0 0 137 82">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#FFF" font-family="OpenSans, Open Sans" font-size="16" transform="translate(-1 -6)">
+            <tspan x=".18" y="17.921">Large Format Lens</tspan>
+        </text>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M56.082 77.427h46.468V38.799H56.082zM75.846 38.799v38.628M31.439 69.467h10.535V46.759H31.439z"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M31.44 48.993c-1.828 0-5.268 3.102-5.268 9.12 0 6.017 3.44 9.12 5.268 9.12M41.975 45.495V70.73l14.107 4.492V41.003zM102.55 80.071h5.699V36.154h-5.699z"/>
+    </g>
+</svg>

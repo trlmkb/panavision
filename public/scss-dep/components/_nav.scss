@@ -1,0 +1,44 @@
+.header-top .navbar {
+  .nav-link {
+    font-size: .875rem;
+    line-height: 1;
+    color: white;
+  }
+  .fa-search,
+  .fa-navicon {
+    font-size: 1rem;
+  }
+}
+
+.header-bottom .navbar {
+  .nav-link {
+    font-size: .875rem;
+    line-height: 1;
+    color: white;
+  }
+}
+
+.nav--indicator {
+  position: relative;
+}
+.nav-indicator {
+  z-index: 1;
+  position: absolute;
+  height: 3px;
+  background: #1e99d4;
+  width: 0px;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  background: none;
+  border-radius: 0;
+}
+.navbar-dark .navbar-toggler {
+  color: white;
+}

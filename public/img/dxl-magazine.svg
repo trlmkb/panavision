@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="93" viewBox="0 0 94 93">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M83.92 42.26h-4.87l-1.21 2.22H75.7l-1.22-2.22H54.71l-3.94 4.78H38.06V20.69h45.86z"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M92.21 14.43v30.64H88v-28s-.07-.84-1.26-.84H46.39v-4.14h43.44a2.31 2.31 0 0 1 2.38 2.34zM45.7 14.06h-2.29l-5.35 6.63"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M53.59 26.23H67.2v9.42H53.59zM32.67 24.22h5.39v15.97h-5.39zM22.82 22.97h9.85v18.46h-9.85zM9.24 21.1h13.58v22.2H9.24zM18.48 21.1v21.79"/>
+        <text fill="#3D3D3D" font-family="OpenSans, Open Sans" font-size="14" transform="translate(1 12)">
+            <tspan x=".2" y="76.02">DXL Magazine</tspan>
+        </text>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.7 50.08V14.19l7.54 6.91v22.2z"/>
+    </g>
+</svg>

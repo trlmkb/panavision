@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="108" viewBox="0 0 76 108">
+    <g fill="none" fill-rule="evenodd" transform="translate(6 6)">
+        <circle cx="32.91" cy="32.08" r="31.83" stroke="#3D3D3D" stroke-linecap="round" stroke-width="2"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M40.14 39.15l-7.21-7.09V16.39M32.91.24v9.05M32.91 54.86v9.05M55.42 9.57l-2.87 2.86M13.26 51.72l-2.86 2.87M64.74 32.08h-9.05M10.12 32.08H1.07M55.42 54.59l-2.87-2.87M13.26 12.43L10.4 9.57"/>
+        <text fill="#3D3D3D" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x=".14" y="97.02">Timecode</tspan>
+        </text>
+    </g>
+</svg>

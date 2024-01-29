@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="109" viewBox="0 0 90 109">
+    <g fill="none" fill-rule="evenodd" transform="translate(6 4)">
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M77.63 17.66L46.26 34.18v32.41l31.37-16.52z"/>
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M14.89 17.66l31.37 16.52v32.41L14.89 50.07z"/>
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M46.26 1.14l31.37 16.52-31.37 16.55-31.37-16.52z"/>
+        <circle cx="2.98" cy="3.82" r="2.92" fill="#FFF" fill-rule="nonzero" stroke="#3D3D3D" stroke-width="2"/>
+        <path stroke="#3D3D3D" stroke-width="2" d="M5.22 3.87h19.41"/>
+        <path fill="#3D3D3D" fill-rule="nonzero" d="M24.15 6.43l4.38-2.56-4.38-2.56z"/>
+        <path stroke="#3D3D3D" stroke-width="2" d="M2.98 6.97v10.64"/>
+        <path fill="#3D3D3D" fill-rule="nonzero" d="M.39 17.12l2.59 4.39 2.59-4.39z"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M48.13 15.3l-1.87-.98-1.87.98"/>
+        <path stroke="#3D3D3D" stroke-dasharray="3.91" stroke-linecap="round" stroke-width="2" d="M38.63 18.34l-6.34 3.35"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M29.41 23.21l-1.87.99-.02-.01v2.11"/>
+        <path stroke="#3D3D3D" stroke-dasharray="3.49" stroke-linecap="round" stroke-width="2" d="M27.52 32.12v6.4"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M27.52 41.43v2.11l1.87.99"/>
+        <path stroke="#3D3D3D" stroke-dasharray="3.91" stroke-linecap="round" stroke-width="2" d="M35.16 47.57l6.34 3.34"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M44.39 52.43l1.87.98 1.87-.98"/>
+        <path stroke="#3D3D3D" stroke-dasharray="3.91" stroke-linecap="round" stroke-width="2" d="M53.9 49.39l6.34-3.34"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M63.12 44.53l1.88-.99v-2.11"/>
+        <path stroke="#3D3D3D" stroke-dasharray="3.49" stroke-linecap="round" stroke-width="2" d="M65 35.61v-6.4"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-width="2" d="M65 26.3v-2.11l-1.88-.99"/>
+        <path stroke="#3D3D3D" stroke-dasharray="3.91" stroke-linecap="round" stroke-width="2" d="M57.36 20.16l-6.35-3.34"/>
+        <text fill="#3D3D3D" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x="28.18" y="100.02">VFX</tspan>
+        </text>
+    </g>
+</svg>

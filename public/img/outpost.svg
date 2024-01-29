@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93" height="108" viewBox="0 0 93 108">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M78.97 61.17H6.66V17.22h13.79v33.24h58.52z"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32.94 61.17h19.74v8.8H32.94zM27.23 69.97h31.16"/>
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M20.45 5.27h66.12v45.19H20.45zM20.45 11.28h66.13"/>
+        <path stroke="#3D3D3D" stroke-linejoin="round" stroke-width="2" d="M27.47 17.47h33.06v11.82H27.47zM65.53 17.49h15.46V43.8H65.53zM27.47 34.26h14.27v9.79H27.47zM46.62 34.26h14.27v9.79H46.62z"/>
+        <text fill="#3D3D3D" font-family="OpenSans, Open Sans" font-size="14" transform="translate(6 5)">
+            <tspan x="13.45" y="98.02">Outpost</tspan>
+        </text>
+    </g>
+</svg>

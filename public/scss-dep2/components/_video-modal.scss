@@ -1,0 +1,33 @@
+.modal-video {
+  .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    max-width: none;
+    transform: none !important;
+  }
+  .close {
+    position: absolute;
+    z-index: 100;
+    background: white;
+    left: 50%;
+    margin-left: 16px;
+    opacity: 1 !important;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    text-shadow: none;
+    span {
+      color: black;
+    }
+  }
+  iframe {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+  &.show iframe {
+    display: block;
+  }
+}

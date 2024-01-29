@@ -1,0 +1,123 @@
+.expandable {
+  position: relative;
+  transition-property: all;
+  transition-duration: 750ms;
+  transition-timing-function: linear;
+}
+.expandable--active {
+  margin-top: -60px;
+}
+.expandable-toggle {
+  z-index: 10;
+  position: relative;
+  // min-width: 32px;
+  width: 160px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 32px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 32px;
+  padding-left: 36px;
+  padding-right: 18px;
+  white-space: nowrap;
+  transition: transform 750ms linear, background-color 300ms linear;
+
+  .expandable--active & {
+    transform: translateY(105px);
+    background-color: white;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: white;
+    top: 15px;
+    left: 9px;
+    transition: all 300ms linear;
+    .expandable--active & {
+      background-color: black;
+    }
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 2px;
+    background: white;
+    top: 7px;
+    left: 17px;
+    transition: transform 750ms linear, background-color 300ms linear;
+    .expandable--active & {
+      transform:  rotate(90deg);
+      background-color: black;
+    }
+  }
+}
+.expandable-toggle-text-opened {
+  display: none;
+  .expandable--active & {
+    display: block;
+  }
+}
+.expandable-toggle-text-closed {
+  display: none;
+  .expandable:not(.expandable--active) & {
+    display: block;
+  }
+}
+.expandable-toggle--open {
+  background-color: #154b7b;
+  // background-color: #164b7b;
+  margin-bottom: 50px;
+}
+.expandable-toggle--close {
+  background-color: white;
+  margin-bottom: 27px;
+  display: none;
+
+  &:before {
+    background: black;
+  }
+  &:after {
+    display: none;
+  }
+}
+.expandable-content {
+  background: black;
+  display: none;
+
+  > .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.expandable:not(.expandable--active) .expandable-content {
+  > .container-inner,
+  > .container {
+    animation-name: fadeOutToBottom;
+    animation-duration: 750ms;
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    // animation-timing-function:$ease-out-quint;
+  }
+}
+.expandable--active .expandable-content {
+  > .container-inner,
+  > .container {
+    animation-name: fadeInFromBottom;
+    animation-duration: 750ms;
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    // animation-timing-function: $ease-out-quint;
+  }
+}

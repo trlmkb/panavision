@@ -1,0 +1,10 @@
+/nbproject
+/vendor
+/public/precss
+/node_modules
+/.sass-cache
+php_errors.log
+npm-debug.log
+composer.lock
+Gemfilelock
+.env
